@@ -1,0 +1,18 @@
+import time
+
+def main():
+    hora = time.strftime('%H')
+    minutos = time.strftime('%M')
+
+    if int(hora) >= 19:
+        print("Tienes que volver a casa, se empieza a hacerse tarde.")
+
+    else:
+        print("Te quedan {} horas y {} minutos para tener que regresar a casa.".format(18- int(hora), 59- int (minutos)))
+
+
+
+if __name__ == '__main__':
+    main()
+
+
